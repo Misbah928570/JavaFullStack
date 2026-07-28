@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>character counter</title>
+</head>
+<body>
+    <h2>Character Counter</h2>
+    <input type="text" id="text" oninput="countchar()" placeholder="type here">
+    <h2 id="output">character: 0</h2>
+    <script>
+        function countchar(){
+            let text = document.getElementById("text").value;
+            let length = text.length;
+            
+            if(length>35){
+                alert("length exceeded");
+            }
+            else{
+                document.getElementById("output").innerText="character : "+length;
+            }
+        }
+    </script>
+</body>
+</html>

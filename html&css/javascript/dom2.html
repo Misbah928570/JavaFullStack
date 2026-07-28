@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="title">Welcome</h1>
+    <button onclick="red()">red</button>
+    <button onclick="blue()">blue</button>
+    <button onclick="green()">green</button>
+    <script>
+        let heading=document.getElementById("title")
+        function green(){
+            heading.style.color="green";
+        }
+        function red(){
+            heading.style.color="red";
+        }
+        function blue(){
+            heading.style.color="blue";
+        }
+    </script>
+</body>
+</html>
