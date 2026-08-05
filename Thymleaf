@@ -1,0 +1,19 @@
+Thymleaf:
+server side java templete commonly used with springboot and spring mvc to create dynamic web page.
+It lets you combimne html with java data so that the server generates the final html toweb browser.
+
+common thymleaf attributes:
+attributes    purpose                     example
+th:text     display text              <p th:text= ${name}</p>
+th:if      conditional rendering      <p th:if= ${age}adult</p>
+th:each   loop through collection     <li th:each ="item ${items}></p>
+th: href      creates url             <a th:href="@{/home}">Home</a>
+th:value    set input value            <input th:value="${user.name}">
+th: src     set image source          <img th:="@{/image/logo.png}">
+
+expression types:
+${.....}        variable expression
+*{....}         selection expression(used in forms)
+#{....}         message /internationalization
+@{....}         url expression
+~{.....}        fragment expression
